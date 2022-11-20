@@ -36,7 +36,6 @@ def analyze(url_img):
         return _ex
 
 def PrintToPHP(name, age, gender, race):
-    # print(name, age, gender, race)
     mydata = [('Name', name), ('Age', age), ('Gender', gender), ('Race', race)]
     userdata = [('Name', name), ('Age', age), ('Gender', gender), ('Race', race)]
     resp = requests.post('https://icm-team.ru/index.php', params = mydata)
